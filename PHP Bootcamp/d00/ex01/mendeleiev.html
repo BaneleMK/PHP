@@ -2,25 +2,74 @@
     <head>
         <title>Periodic Table</title>
         
-        <STYLE>
-        .Cell {border: 2px solid gray; width: 40; height: 40}
-        .ECell {width: 40; height: 40}
-        .ESCell {width: 10}
-        .Title {text-align: center}
-        .Footer {text-align: right; font-family: monospace}
-        .Atomic_no {text-align: right; font-size: 10px}
-        .No {text-align: left; font-size: 14px}
-        .Symbol {text-align: center; font-weight: bold}
-        .Cellw {border: 2px solid gray; 
-                width: 60}
+        <STYLE type="text/css">
+        .Cell {
+            border: 2px solid gray;
+            width: 40;
+            height: 40
+        }
+        
+        .ECell {
+            width: 40;
+            height: 40;
+        }
+        
+        .ESCell {
+            width: 1%;
+        }
+        
+        .Title {
+            text-align: center;
+        }
+        
+        .Footer {
+            text-align: right;
+            font-family: monospace;
+        }
+        
+        .Atomic_no {
+            text-align: right;
+            font-size: 10px
+        }
+        
+        .No {
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .Symbol {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .Cellw {
+            border: 2px solid gray;
+            width: 100%;
+            height: 100%;
+        }
+
+        .table{
+            align-content : center;
+            width: 80%;
+            height: 60%;
+        }
+
         </STYLE>
         <meta charset="UTF-8">
     </head>
     
-    <body bgcolor= "white" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px">
+    <body style="font-family: Arial, Helvetica, sans-serif; font-size: 10px" align="middle">
         
         <h1 class = Title >The Periodic Table of Elements</h1>
-        <table align = center>
+        
+        <br />
+        <div align="center">
+            <img src="http://i0.wp.com/thesnapper.millersville.edu/wp-content/uploads/2018/02/Dmitri_Mendeleev.jpg?resize=419%2C370" width="40%" height="40%">
+        </div>
+            
+        <br />
+        
+        <table align="center" class="table">
             <tr height = 10 >
                 <th class="Cell">
                     <table class= "Cellw" style="background-color: aquamarine">
@@ -438,7 +487,7 @@
                         <table class= "Cellw" style="background-color:brown">
                             <tr> <td class = Atomic_no>-</td> </tr>  
                             <tr> <td class = Symbol>-</td> </tr>
-                            <tr> <td class = No>57 - 71</td> </tr>
+                            <tr> <td class = No>57-71</td> </tr>
                         </table>        
                 </th>
                 <th class = EsCell> </th>
@@ -567,7 +616,7 @@
                         <table class= "Cellw" style="background-color:lightsteelblue">
                             <tr> <td class = Atomic_no>-</td> </tr>  
                             <tr> <td class = Symbol>-</td> </tr>
-                            <tr> <td class = No>89 - 103</td> </tr>
+                            <tr> <td class = No>89-103</td> </tr>
                         </table>        
                 </th>
                 <th class = EsCell> </th>
@@ -677,7 +726,7 @@
                     </table>
                 </th>
             </tr>
-            <tr height = 10 >
+            <tr height = 1% >
             </tr>
             <tr height = 10 >
                 <th class = ECell colspan="2"> </th>
@@ -900,8 +949,7 @@
                 <th class = ECell> </th>
                 </tr>
         </table>
-        
         <hr />
-        <p class = Footer><i> © bmkhize 2018</i></p>
     </body>
+    <p class = Footer><i> © bmkhize 2018</i></p>
 </html>
