@@ -56,23 +56,52 @@
             width: 200px;
             height: 500px;
             float: left;
+        
         }
 
-        .RFlexboxcontainer{
+        .itemFlexbox{
             border-radius: 15px;
+            border: #DDDDDD solid thick;
             display: flex;
-            background-color: #8F8F8F;
-            box-shadow: 10px 10px 10px #111111;
+            background-color: #FFFFFF;
+            box-shadow: #111111 2px 2px 2px;
             flex-direction: column;
             width: 200px;
-            height: 500px;
-            float: right;
-        }
-
-        .TEmptyFlex{
-            display: flex;
+            height: 200px;
             align-items: center;
             justify-content: center;
+            float: left;
+        }
+
+        IFL{
+            border-radius: 25px;
+            border: #25323b solid thin;
+            display: flex;
+            background-color: #FFFFFF;
+            flex-direction: column;
+            width: 180px;
+            height: 150px;
+            align-items: center;
+            justify-content: center;
+            float: left;
+        }
+
+        IFLP{
+            display: flex;
+            background-color: #FFFFFF;
+            flex-direction: column;
+            width: 180px;
+            height: 30px;
+            text-align: center;
+            justify-content: center;
+            font-family: Cambria;
+            font-size: 15px;
+            color: #111111
+        }
+        
+        .TEmptyFlex{
+            display: flex;
+            align-items: space-evenly;
         }
 
         .BaseFlex{
@@ -84,12 +113,11 @@
         
         .TFlexboxcontainer{
             display: flex;
-            border-radius: 2px;
+            border-radius: 5px;
             border: #FFFFFF solid 1px;
             background-color: #25323b;
             flex-direction: row;
             width: 95%;
-            justify-content: space-evenly;
             align-items: center;
             height: 150px;
             float: left;
@@ -98,32 +126,12 @@
         .MFlexboxcontainer{
             display: flex;
             border-radius: 3px;
-            background-color: #25323b;
             flex-direction: column;
             flex-wrap: wrap;
             align-content: stretch;
             justify-content: space-evenly;
             width: 95%;
             height: 1000px;
-        }
-        
-        ItemFlexbox{
-            display: flex;
-            border-radius: 5px;
-            background-color: #FFFFFF;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 50px;            
-            height: 50px;
-        }
-
-        .WMFlexboxcontainer{
-            display: flex;
-            border-radius: 3px;
-            background-color: #25323b;
-            flex-direction: column;
-            width: 95%;
-            height: 650px;
         }
 
         .FLimg{
@@ -154,6 +162,8 @@
         li a:hover {
             background-color: #222;
         }
+
+
         </STYLE>
         <meta charset="UTF-8">
     </head>
@@ -164,14 +174,18 @@
         <div class="BaseFlex">
             <div class="TEmptyFlex">
                 <div class=TFlexboxcontainer>
+                    <div class="TEmptyFlex" style="flex-grow: 1">
                         <ul>
                             <li><a href="">Logo</a></li>
                         </ul>
+                    </div>
+                    <div class="TEmptyFlex" style="align-items: flex-end"">
                         <ul>
                             <li><a href="">profile</a></li>
-                            <li><a href="">chart</a></li>
+                            <li><a href="">cart</a></li>
                         </ul>
-                    </div>        
+                    </div>
+                 </div>
             </div>
             <BR />
             <div class="TEmptyFlex">
@@ -190,60 +204,104 @@
                 <div class=MFlexboxcontainer style="width: 15%; background-color: #7f828b;">
                     3
                 </div>
-                <div class=MFlexboxcontainer style="width: 65%; flex-direction: unset;">
-                    <div class=ItemFlexbox>
-                        1
+                <div class=MFlexboxcontainer style="width: 65%; flex-direction: row;">
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
-                    <div class=ItemFlexbox>
-                        1
-                    </div>
-                    <div class=ItemFlexbox>
-                        1
-                    </div>
-                    <div class=ItemFlexbox>
-                        1
-                    </div>
-                    <div class=ItemFlexbox>
-                        1
-                    </div>
-                    <div class=ItemFlexbox>
-                        1
-                    </div>
-                    <div class=ItemFlexbox>
-                        1
+                    <div class=itemFlexbox>
+                        <IFL>
+                            <img src ="https://barfblog.com/wp-content/uploads/2014/09/donkey-shrek.jpg" >
+                        </IFL>
+                        <IFLP style="background-color; height: 30px;">
+                            price = R00.00
+                        </IFLP>   
                     </div>
                 </div>
+                
                 <div class=MFlexboxcontainer style="width: 15%; background-color: #7f828b;">
                     3
                 </div>
             </div>
+            <div class="TEmptyFlex">
+                    <div class=TFlexboxcontainer>
+                    </div>
         </div>
     </div>
     
